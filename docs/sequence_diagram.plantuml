@@ -1,0 +1,11 @@
+@startuml
+
+participant User as User
+participant "Web Client" as Web
+participant "Dutchpay Server" as Server
+
+User -> Web : GET /
+Web -> Server : static asset 요청(HTML/CSS 등)
+Server --> Web : HTML/CSS 등 응답
+
+@enduml
